@@ -13,13 +13,26 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        // accent: {
+        //   1: "hsl(var(--color-accent1) / <alpha-value>)",
+        //   2: "hsl(var(--color-accent2) / <alpha-value>)",
+        // },
+        // bkg: "hsl(var(--color-bkg) / <alpha-value>)",
+        forground: "hsl(var(--foreground) / <alpha-value>)",
+        content: "hsl(var(--color-content) / <alpha-value>)",
+      },
+      animation: {
+        "spin-slower": "spin 35s ease infinite",
+        "spin-slow": "spin 25s ease-in-out infinite reverse",
+      },
     },
     container: {
       center: true,
       padding: {
-        DEFAULT: '1rem',
-        md: '1.5rem',
-        lg: '2rem'
+        DEFAULT: '0.5rem',
+        md: '1rem',
+        lg: '1.5rem'
       }
     }
   },

@@ -1,17 +1,27 @@
-import Image from 'next/image'
-
+import { FaCat } from 'react-icons/fa'
 export default function Home() {
   return (
-    // <main className='flex min-h-screen flex-col items-center justify-between p-24'>
-    <main className='min-h-screen'>
-      <div className='flex flex-col items-center justify-between p-24'>
-        <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40">
-          <h1 className='relative text-3xl font-bold dark:drop-shadow-[0_0_0.3rem_#ffffff70]'>
-            Next.js Boilerplate
-          </h1>
-        </div>
-      </div>
-      <div className='container flex flex-col items-center'>Osama Academy</div>
-    </main>
+    <div className='p-2'>
+      <h1 className='flex items-center gap-2'>
+        Home Content <FaCat className='text-lime-400' />
+      </h1>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+        minima corporis aspernatur illum enim aperiam doloribus laboriosam natus
+        repellendus adipisci quia dolores ratione, sunt voluptatum vero
+        distinctio beatae eaque? Natus. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Consequatur minima corporis aspernatur illum enim
+        aperiam doloribus laboriosam natus repellendus adipisci quia dolores
+        ratione, sunt voluptatum vero distinctio beatae eaque? Natus. Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Consequatur minima
+        corporis aspernatur illum enim aperiam doloribus laboriosam natus
+        repellendus adipisci quia dolores ratione, sunt voluptatum vero
+        distinctio beatae eaque? Natus. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Consequatur minima corporis aspernatur illum enim
+        aperiam doloribus laboriosam natus repellendus adipisci quia dolores
+        ratione, sunt voluptatum vero distinctio beatae eaque? Natus.
+      </p>
+    </div>
   )
 }

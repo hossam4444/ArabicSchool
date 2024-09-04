@@ -3,5 +3,8 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "eslint.format.enable": true,
   "eslint.run": "onSave",
-  "eslint.alwaysShowStatus": true
+  "eslint.alwaysShowStatus": true,
+  "workbench.editor.customLabels.patterns": {
+    "**/app/**/page.tsx": "PAGE (${dirname})"
+  }
 }

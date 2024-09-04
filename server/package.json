@@ -1,0 +1,14 @@
+{
+  "name": "osama_academy",
+  "version": "1.0.0",
+  "description": "Osama Academy is the ideal place to learn Arabic and the holy Quran With the brightest minds and the most experienced and friendly teachers and tutors.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test_statment"
+  },
+  "author": "Hossam Tarek",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
