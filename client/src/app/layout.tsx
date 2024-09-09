@@ -1,14 +1,13 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import './globals.css'
-import Footer from '@/components/Footer/Footer'
-import Header from '@/components/Header/Header'
-
-const inter = Inter({ subsets: ['latin'] })
+import Providers from '@/components/atoms/providers'
+import Footer from '@/components/organisms/Footer'
+import Header from '@/components/organisms/Header'
+import { ibmPlexSansArabic, inter, nunitoSans, robotoMono } from '@/fonts/fonts'
 
 export const metadata: Metadata = {
-  title: 'Osama Academy',
-  description: 'The right place to learn and love Arabic'
+  title: 'Osama Arabic School',
+  description: 'The right place to learn and love Arabic, Quran, '
 }
 
 export default function RootLayout({
@@ -17,30 +16,15 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang='en'>
-      <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function() {
-                const storedTheme = localStorage.getItem('theme');
-                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                if (storedTheme) {
-                  document.documentElement.setAttribute('data-theme', storedTheme);
-                } else if (prefersDark) {
-                  document.documentElement.setAttribute('data-theme', 'dark');
-                }
-              })();
-            `
-          }}
-        />
-      </head>
+    <html lang='en' suppressHydrationWarning>
       <body
-        className={`${inter.className} bg-forground container text-content`}
+        className={`${inter.variable} ${nunitoSans.variable} ${robotoMono.variable} ${ibmPlexSansArabic.variable} font-nunito`}
       >
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        <Providers>
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </Providers>
       </body>
     </html>
   )

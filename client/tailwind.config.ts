@@ -6,26 +6,48 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: 'class',
   theme: {
+    fontFamily: {
+      nunito: 'var(--font-nunito-sans)',
+      ibm: 'var(--fontIBM)',
+    },
+    fontWeight: {
+      thin: '100',
+      normal: '400',
+      bold: '700',
+    },
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      // boxShadow: {
+      //   '3xl': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
+      // },
       colors: {
-        // accent: {
-        //   1: "hsl(var(--color-accent1) / <alpha-value>)",
-        //   2: "hsl(var(--color-accent2) / <alpha-value>)",
+        primary: "hsl(var(--color-primary) / <alpha-value>)",
+        // btnbg: {
+        //   1: "hsl(var(--btn-bg-primary) / <alpha-value>)",
+        //   2: "hsl(var(--btn-bg-second) / <alpha-value>)",
+        //   3: "hsl(var(--btn-bg-third) / <alpha-value>)",
         // },
-        // bkg: "hsl(var(--color-bkg) / <alpha-value>)",
-        forground: "hsl(var(--foreground) / <alpha-value>)",
-        content: "hsl(var(--color-content) / <alpha-value>)",
+        // bgc: {
+        //   prim: "hsl(var(--bg-primary) / <alpha-value>)",
+        //   sec: "hsl(var(--fbg-second) / <alpha-value>)",
+        // },
+        // btntxt: {
+        //   1: "hsl(var(--btn-txt-color-primary) / <alpha-value>)",
+        //   2: "hsl(var(--btn-txt-color-second) / <alpha-value>)",
+        // },
+        content: {
+          prim: "hsl(var(--txt-color-primary) / <alpha-value>)",
+          sec: "hsl(var(--txt-color-second) / <alpha-value>)",
+          nav: "hsl(var(--txt-color-dark-secondary) / <alpha-value>)",
+        },
       },
-      animation: {
-        "spin-slower": "spin 35s ease infinite",
-        "spin-slow": "spin 25s ease-in-out infinite reverse",
-      },
+      // animation: {
+      //   "spin-slow": "spin 25s ease-in-out infinite reverse",
+      //   "spin-slower": "spin 35s ease infinite",
+      // },
     },
     container: {
       center: true,
