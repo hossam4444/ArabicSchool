@@ -23,11 +23,11 @@ export default function Hero() {
         <Image
           src='/images/oss.png'
           alt='Picture of the author'
-          width={350}
-          height={300}
+          width='350'
+          height='300'
           blurDataURL='data:...'
           placeholder='blur'
-          className='xl:w-[500px]'
+          className='xl:w-[450px]'
         />
       </div>
     </section>

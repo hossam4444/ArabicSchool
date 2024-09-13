@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang='en' suppressHydrationWarning>
       <body
-        className={`${inter.variable} ${nunitoSans.variable} ${robotoMono.variable} ${ibmPlexSansArabic.variable} text-pretty bg-white font-nunito leading-relaxed dark:bg-bkg-dark`}
+        className={`${inter.variable} ${nunitoSans.variable} ${robotoMono.variable} ${ibmPlexSansArabic.variable} overflow-x-hidden text-pretty bg-white font-nunito leading-relaxed dark:bg-bkg-dark`}
       >
         <Providers>
           <Header />
