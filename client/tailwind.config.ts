@@ -30,10 +30,11 @@ const config: Config = {
         //   2: "hsl(var(--btn-bg-second) / <alpha-value>)",
         //   3: "hsl(var(--btn-bg-third) / <alpha-value>)",
         // },
-        // bgc: {
-        //   prim: "hsl(var(--bg-primary) / <alpha-value>)",
-        //   sec: "hsl(var(--fbg-second) / <alpha-value>)",
-        // },
+        bkg: {
+          light: "hsl(var(--light) / <alpha-value>)",
+          dark: "hsl(var(--dark) / <alpha-value>)",
+          semidark: "hsl(var(--semi-dark) / <alpha-value>)",
+        },
         // btntxt: {
         //   1: "hsl(var(--btn-txt-color-primary) / <alpha-value>)",
         //   2: "hsl(var(--btn-txt-color-second) / <alpha-value>)",
@@ -52,8 +53,8 @@ const config: Config = {
     container: {
       center: true,
       padding: {
-        DEFAULT: '0.5rem',
-        md: '1rem',
+        DEFAULT: '1rem',
+        md: '1.25rem',
         lg: '1.5rem'
       }
     }
